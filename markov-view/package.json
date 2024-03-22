@@ -1,0 +1,24 @@
+{
+  "name": "markov-view",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "cytoscape": "^3.28.1",
+    "mathjax": "^3.2.2",
+    "mathjax-full": "^3.2.2",
+    "vue": "^3.4.15",
+    "vue-mathjax": "^0.1.1",
+    "vue-mathjax-next": "^0.0.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "vite": "^5.0.11"
+  }
+}
