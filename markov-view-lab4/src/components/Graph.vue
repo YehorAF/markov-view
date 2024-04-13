@@ -212,10 +212,8 @@ const parseFormula = () => {
     }
     case1 += "\\end{cases}"
     case2 = case2.split("\\\\")
-    console.log(case2)
     case2.pop()
     case2.pop()
-    console.log(case2)
     case2 = case2.join("\\\\") + "\\\\"
 
     for (let i = 0; i < nodeAmount.value - 1; i++) {
@@ -234,9 +232,11 @@ const parseFormula = () => {
 
     x = iterateGaussSeidel(x, a, b, 25, 0.0001)
     console.log(x)
+
     for (let i = 0; i < x.length; i++) {
         case3 += `p_${i} = ${x[i].toFixed(4)}\\\\`
     }
+    
     case3 += "\\end{cases}"
     formula.value += case3
 }
